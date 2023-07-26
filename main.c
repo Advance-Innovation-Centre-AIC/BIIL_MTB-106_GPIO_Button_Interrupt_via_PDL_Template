@@ -90,7 +90,7 @@ int main(void)
  	Cy_GPIO_SetFilter(CYBSP_USER_BTN_PORT, CYBSP_USER_BTN_NUM);
 
 	
- 	/* Enable the interrupt */
+ 	/* Enable the interrupt*/
  	NVIC_EnableIRQ(intrCfg.intrSrc);
 
 
