@@ -88,6 +88,8 @@ int main(void)
  	Cy_SysInt_Init(&intrCfg, &Interrupt_Handler);
  	/* Send the button through the glitch filter */
  	Cy_GPIO_SetFilter(CYBSP_USER_BTN_PORT, CYBSP_USER_BTN_NUM);
+
+	
  	/* Enable the interrupt */
  	NVIC_EnableIRQ(intrCfg.intrSrc);
 
